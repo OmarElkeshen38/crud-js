@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Form</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="w-75 m-auto my-5">
+                <label for="">Student Name</label>
+                <input type="text" class="form-control" id="studentNameInp">
+
+                <label for="" class="mt-3">Student Id</label>
+                <input type="text" class="form-control" id="studentIdInp">
+
+                <label for="" class="mt-3">Student GPA</label>
+                <input type="text" class="form-control" id="studentGpaInp">
+
+                <label for="" class="mt-3">Student Description</label>
+                <textarea cols="30" rows="4" class="form-control" id="studentDesInp">
+                    </textarea>
+                <button onclick="addStudent()" class="btn btn-info mt-3">Add Student</button>
+                <button onclick="clearForm()" class="btn btn-info mt-3">Reast</button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="w-75 m-auto">
+                <table class="table table-striped">
+                    <thead>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Id</th>
+                        <th>GPA</th>
+                        <th>Description</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="myTable">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="javascript/bootstrap.bundle.min.js"></script>
+        <script src="javascript/main.js"></script>
+    </body>
+</html>
